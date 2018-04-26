@@ -20,8 +20,15 @@ class PersonalDeetsViewController: UIViewController {
     }
     
     @IBAction func onNextButtonTap(_ sender: UIButton) {
-        
+        if  let accountDeetsVC = storyboard?.instantiateViewController(withIdentifier: Constants.StoryboardIDs.AccountDetailsScene) as? AccountDetailsViewController {
+        navigationController?.pushViewController( accountDeetsVC, animated: true)
+        }
     }
     
-
+    @IBAction func onBackgroundTap(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+    
+    
+    
 }

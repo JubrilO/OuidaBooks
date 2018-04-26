@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SponsoredGridView" customModule="Ouida_Books" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="3JV-bZ-OUO" id="tt9-iK-iz0"/>
+                <outlet property="sponsoredButton" destination="6GX-YD-uQX" id="WRe-47-LR9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="380"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6GX-YD-uQX">
+                    <rect key="frame" x="20" y="10" width="71" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="aEQ-Ef-0Lq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                    <state key="normal" title="SPONSORED"/>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="3JV-bZ-OUO">
+                    <rect key="frame" x="0.0" y="42" width="375" height="338"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OZs-po-wfv">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ibL-mQ-yX2"/>
+                        <outlet property="delegate" destination="-1" id="62l-LQ-LAk"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6GX-YD-uQX" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="D8H-Mt-449"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="3JV-bZ-OUO" secondAttribute="bottom" id="Kqb-rP-t5d"/>
+                <constraint firstItem="6GX-YD-uQX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Nao-7z-LCe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3JV-bZ-OUO" secondAttribute="trailing" id="Zai-E9-IaF"/>
+                <constraint firstItem="3JV-bZ-OUO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="rBc-94-HPX"/>
+                <constraint firstItem="3JV-bZ-OUO" firstAttribute="top" secondItem="6GX-YD-uQX" secondAttribute="bottom" id="zI3-vZ-asK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

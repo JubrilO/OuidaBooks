@@ -7,31 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62EE1326B3885E06E26ABA6D /* Pods_Ouida_Books.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 128EB4261DD8193871BEFB2E /* Pods_Ouida_Books.framework */; };
+		912E2796208E166100E768AC /* StoreGridSection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912E2795208E166100E768AC /* StoreGridSection.xib */; };
+		912E279B208E5B5F00E768AC /* BookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912E279A208E5B5F00E768AC /* BookCollectionViewCell.swift */; };
+		912E279D208E5B8C00E768AC /* StoreGridSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912E279C208E5B8C00E768AC /* StoreGridSection.swift */; };
+		912E27A0208EDBA700E768AC /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912E279F208EDBA700E768AC /* Book.swift */; };
+		912E27A4208EE51000E768AC /* BookCoverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912E27A3208EE51000E768AC /* BookCoverCell.xib */; };
+		9142EBE42091376B00AB6A61 /* SponsoredGridView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9142EBE32091376B00AB6A61 /* SponsoredGridView.xib */; };
+		9142EBE62091379B00AB6A61 /* SponsoredGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9142EBE52091379B00AB6A61 /* SponsoredGridView.swift */; };
+		9142EBEA2091399300AB6A61 /* SponsoredCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9142EBE92091399300AB6A61 /* SponsoredCell.xib */; };
+		9142EBEC209139B500AB6A61 /* SponsoredCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9142EBEB209139B500AB6A61 /* SponsoredCell.swift */; };
 		916C4EAD2088A475003AF8C3 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916C4EAC2088A475003AF8C3 /* WelcomeViewController.swift */; };
 		916C4EAF2088A54F003AF8C3 /* PersonalDeetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916C4EAE2088A54F003AF8C3 /* PersonalDeetsViewController.swift */; };
 		916C4EB12088A614003AF8C3 /* AccountDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916C4EB02088A614003AF8C3 /* AccountDetailsViewController.swift */; };
 		916C4EB32088A735003AF8C3 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916C4EB22088A735003AF8C3 /* PreferencesViewController.swift */; };
+		91944F8B208F4A05000638E0 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91944F8A208F4A05000638E0 /* Protocols.swift */; };
 		91EE5C64208165AB003C74C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EE5C63208165AB003C74C8 /* AppDelegate.swift */; };
-		91EE5C66208165AB003C74C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EE5C65208165AB003C74C8 /* ViewController.swift */; };
 		91EE5C69208165AB003C74C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91EE5C67208165AB003C74C8 /* Main.storyboard */; };
 		91EE5C6B208165AD003C74C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91EE5C6A208165AD003C74C8 /* Assets.xcassets */; };
 		91EE5C6E208165AD003C74C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91EE5C6C208165AD003C74C8 /* LaunchScreen.storyboard */; };
 		91EE5C7720829907003C74C8 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91EE5C7620829907003C74C8 /* SignUp.storyboard */; };
+		91F331DD2089F79200F92CB2 /* OuidaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F331DC2089F79200F92CB2 /* OuidaTextField.swift */; };
+		91F331E0208B382200F92CB2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F331DF208B382200F92CB2 /* Constants.swift */; };
+		91F331E2208B827200F92CB2 /* BookStore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F331E1208B827200F92CB2 /* BookStore.storyboard */; };
+		91F331E4208C19ED00F92CB2 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F331E3208C19ED00F92CB2 /* StoreViewController.swift */; };
+		91F331E6208C1D0500F92CB2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F331E5208C1D0500F92CB2 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		128EB4261DD8193871BEFB2E /* Pods_Ouida_Books.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ouida_Books.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32284CEFA547FBA0E9FBE392 /* Pods-Ouida Books.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ouida Books.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ouida Books/Pods-Ouida Books.release.xcconfig"; sourceTree = "<group>"; };
+		912E2795208E166100E768AC /* StoreGridSection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreGridSection.xib; sourceTree = "<group>"; };
+		912E279A208E5B5F00E768AC /* BookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCollectionViewCell.swift; sourceTree = "<group>"; };
+		912E279C208E5B8C00E768AC /* StoreGridSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreGridSection.swift; sourceTree = "<group>"; };
+		912E279F208EDBA700E768AC /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		912E27A3208EE51000E768AC /* BookCoverCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCoverCell.xib; sourceTree = "<group>"; };
+		9142EBE32091376B00AB6A61 /* SponsoredGridView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SponsoredGridView.xib; sourceTree = "<group>"; };
+		9142EBE52091379B00AB6A61 /* SponsoredGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsoredGridView.swift; sourceTree = "<group>"; };
+		9142EBE92091399300AB6A61 /* SponsoredCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SponsoredCell.xib; sourceTree = "<group>"; };
+		9142EBEB209139B500AB6A61 /* SponsoredCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsoredCell.swift; sourceTree = "<group>"; };
 		916C4EAC2088A475003AF8C3 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		916C4EAE2088A54F003AF8C3 /* PersonalDeetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDeetsViewController.swift; sourceTree = "<group>"; };
 		916C4EB02088A614003AF8C3 /* AccountDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsViewController.swift; sourceTree = "<group>"; };
 		916C4EB22088A735003AF8C3 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		91944F8A208F4A05000638E0 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		91EE5C60208165AB003C74C8 /* Ouida Books.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ouida Books.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91EE5C63208165AB003C74C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		91EE5C65208165AB003C74C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		91EE5C68208165AB003C74C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91EE5C6A208165AD003C74C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91EE5C6D208165AD003C74C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91EE5C6F208165AD003C74C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91EE5C7620829907003C74C8 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		91F331DC2089F79200F92CB2 /* OuidaTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OuidaTextField.swift; sourceTree = "<group>"; };
+		91F331DF208B382200F92CB2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		91F331E1208B827200F92CB2 /* BookStore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BookStore.storyboard; sourceTree = "<group>"; };
+		91F331E3208C19ED00F92CB2 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		91F331E5208C1D0500F92CB2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C8FE32599E0E5ED0053A578A /* Pods-Ouida Books.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ouida Books.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ouida Books/Pods-Ouida Books.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +71,84 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62EE1326B3885E06E26ABA6D /* Pods_Ouida_Books.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44C4B31CB8C3E2ABDE9DC717 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				128EB4261DD8193871BEFB2E /* Pods_Ouida_Books.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		912E2797208E5ADE00E768AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9142EBE7209137BC00AB6A61 /* SponsoredGridView */,
+				917BB0332090B8F900899514 /* BookCoverCell */,
+				917BB0322090884A00899514 /* StoreGridSection */,
+				91F331E3208C19ED00F92CB2 /* StoreViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		912E279E208EDB9600E768AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				912E279F208EDBA700E768AC /* Book.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9142EBE7209137BC00AB6A61 /* SponsoredGridView */ = {
+			isa = PBXGroup;
+			children = (
+				9142EBE82091397700AB6A61 /* SponsoredCell */,
+				9142EBE32091376B00AB6A61 /* SponsoredGridView.xib */,
+				9142EBE52091379B00AB6A61 /* SponsoredGridView.swift */,
+			);
+			path = SponsoredGridView;
+			sourceTree = "<group>";
+		};
+		9142EBE82091397700AB6A61 /* SponsoredCell */ = {
+			isa = PBXGroup;
+			children = (
+				9142EBE92091399300AB6A61 /* SponsoredCell.xib */,
+				9142EBEB209139B500AB6A61 /* SponsoredCell.swift */,
+			);
+			path = SponsoredCell;
+			sourceTree = "<group>";
+		};
 		916C4EB420895C10003AF8C3 /* BookStore */ = {
 			isa = PBXGroup;
 			children = (
+				912E2797208E5ADE00E768AC /* View */,
+				91F331E1208B827200F92CB2 /* BookStore.storyboard */,
 			);
 			path = BookStore;
+			sourceTree = "<group>";
+		};
+		917BB0322090884A00899514 /* StoreGridSection */ = {
+			isa = PBXGroup;
+			children = (
+				912E2795208E166100E768AC /* StoreGridSection.xib */,
+				912E279C208E5B8C00E768AC /* StoreGridSection.swift */,
+			);
+			path = StoreGridSection;
+			sourceTree = "<group>";
+		};
+		917BB0332090B8F900899514 /* BookCoverCell */ = {
+			isa = PBXGroup;
+			children = (
+				912E27A3208EE51000E768AC /* BookCoverCell.xib */,
+				912E279A208E5B5F00E768AC /* BookCollectionViewCell.swift */,
+			);
+			path = BookCoverCell;
 			sourceTree = "<group>";
 		};
 		91EE5C57208165AB003C74C8 = {
@@ -57,6 +156,8 @@
 			children = (
 				91EE5C62208165AB003C74C8 /* Ouida Books */,
 				91EE5C61208165AB003C74C8 /* Products */,
+				C6F852652E345FA5069FDF2E /* Pods */,
+				44C4B31CB8C3E2ABDE9DC717 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,10 +172,11 @@
 		91EE5C62208165AB003C74C8 /* Ouida Books */ = {
 			isa = PBXGroup;
 			children = (
+				912E279E208EDB9600E768AC /* Model */,
+				91F331DE208B380500F92CB2 /* Supporting */,
 				916C4EB420895C10003AF8C3 /* BookStore */,
 				91EE5C75208298DF003C74C8 /* SignUp */,
 				91EE5C63208165AB003C74C8 /* AppDelegate.swift */,
-				91EE5C65208165AB003C74C8 /* ViewController.swift */,
 				91EE5C67208165AB003C74C8 /* Main.storyboard */,
 				91EE5C6A208165AD003C74C8 /* Assets.xcassets */,
 				91EE5C6C208165AD003C74C8 /* LaunchScreen.storyboard */,
@@ -91,8 +193,28 @@
 				916C4EAE2088A54F003AF8C3 /* PersonalDeetsViewController.swift */,
 				916C4EB02088A614003AF8C3 /* AccountDetailsViewController.swift */,
 				916C4EB22088A735003AF8C3 /* PreferencesViewController.swift */,
+				91F331DC2089F79200F92CB2 /* OuidaTextField.swift */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		91F331DE208B380500F92CB2 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				91F331DF208B382200F92CB2 /* Constants.swift */,
+				91944F8A208F4A05000638E0 /* Protocols.swift */,
+				91F331E5208C1D0500F92CB2 /* Extensions.swift */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		C6F852652E345FA5069FDF2E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8FE32599E0E5ED0053A578A /* Pods-Ouida Books.debug.xcconfig */,
+				32284CEFA547FBA0E9FBE392 /* Pods-Ouida Books.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91EE5C72208165AD003C74C8 /* Build configuration list for PBXNativeTarget "Ouida Books" */;
 			buildPhases = (
+				8B44EE5E21CED597B104A512 /* [CP] Check Pods Manifest.lock */,
 				91EE5C5C208165AB003C74C8 /* Sources */,
 				91EE5C5D208165AB003C74C8 /* Frameworks */,
 				91EE5C5E208165AB003C74C8 /* Resources */,
+				F99E7219527E7DC9EB73597F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,13 +278,81 @@
 			buildActionMask = 2147483647;
 			files = (
 				91EE5C6E208165AD003C74C8 /* LaunchScreen.storyboard in Resources */,
+				9142EBE42091376B00AB6A61 /* SponsoredGridView.xib in Resources */,
+				912E2796208E166100E768AC /* StoreGridSection.xib in Resources */,
 				91EE5C6B208165AD003C74C8 /* Assets.xcassets in Resources */,
 				91EE5C7720829907003C74C8 /* SignUp.storyboard in Resources */,
+				912E27A4208EE51000E768AC /* BookCoverCell.xib in Resources */,
 				91EE5C69208165AB003C74C8 /* Main.storyboard in Resources */,
+				9142EBEA2091399300AB6A61 /* SponsoredCell.xib in Resources */,
+				91F331E2208B827200F92CB2 /* BookStore.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B44EE5E21CED597B104A512 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ouida Books-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F99E7219527E7DC9EB73597F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ouida Books/Pods-Ouida Books-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AEXML/AEXML.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
+				"${BUILT_PRODUCTS_DIR}/FolioReaderKit/FolioReaderKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FontBlaster/FontBlaster.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQWebViewController/JSQWebViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/MenuItemKit/MenuItemKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
+				"${BUILT_PRODUCTS_DIR}/Segmentio/Segmentio.framework",
+				"${BUILT_PRODUCTS_DIR}/ZFDragableModalTransition/ZFDragableModalTransition.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AEXML.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FolioReaderKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontBlaster.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQWebViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MenuItemKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Segmentio.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZFDragableModalTransition.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ouida Books/Pods-Ouida Books-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		91EE5C5C208165AB003C74C8 /* Sources */ = {
@@ -169,10 +361,19 @@
 			files = (
 				916C4EAF2088A54F003AF8C3 /* PersonalDeetsViewController.swift in Sources */,
 				916C4EAD2088A475003AF8C3 /* WelcomeViewController.swift in Sources */,
-				91EE5C66208165AB003C74C8 /* ViewController.swift in Sources */,
 				916C4EB12088A614003AF8C3 /* AccountDetailsViewController.swift in Sources */,
+				912E279B208E5B5F00E768AC /* BookCollectionViewCell.swift in Sources */,
 				91EE5C64208165AB003C74C8 /* AppDelegate.swift in Sources */,
+				91F331E6208C1D0500F92CB2 /* Extensions.swift in Sources */,
+				91F331E4208C19ED00F92CB2 /* StoreViewController.swift in Sources */,
 				916C4EB32088A735003AF8C3 /* PreferencesViewController.swift in Sources */,
+				912E27A0208EDBA700E768AC /* Book.swift in Sources */,
+				91944F8B208F4A05000638E0 /* Protocols.swift in Sources */,
+				9142EBEC209139B500AB6A61 /* SponsoredCell.swift in Sources */,
+				9142EBE62091379B00AB6A61 /* SponsoredGridView.swift in Sources */,
+				91F331DD2089F79200F92CB2 /* OuidaTextField.swift in Sources */,
+				912E279D208E5B8C00E768AC /* StoreGridSection.swift in Sources */,
+				91F331E0208B382200F92CB2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,11 +515,13 @@
 		};
 		91EE5C73208165AD003C74C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8FE32599E0E5ED0053A578A /* Pods-Ouida Books.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E5H7W73394;
 				INFOPLIST_FILE = "Ouida Books/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,11 +535,13 @@
 		};
 		91EE5C74208165AD003C74C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32284CEFA547FBA0E9FBE392 /* Pods-Ouida Books.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E5H7W73394;
 				INFOPLIST_FILE = "Ouida Books/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
