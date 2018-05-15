@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="j3O-Od-2fa" customClass="ReviewsCollectionViewCell" customModule="Ouida_Books" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="205"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="205"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apr 16" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9Y-Pi-uRH">
+                        <rect key="frame" x="289" y="18" width="46" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timi Ajiboye" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLn-0c-plO">
+                        <rect key="frame" x="249" y="36" width="86" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3J-Tw-Rpa">
+                        <rect key="frame" x="20" y="69" width="315" height="121"/>
+                        <mutableString key="text">Consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+</mutableString>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRO-Gd-IUm">
+                        <rect key="frame" x="20" y="21.5" width="72" height="11"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="72" id="gzk-vf-HPQ"/>
+                            <constraint firstAttribute="height" constant="11" id="of2-A2-crz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.90196078431372551" green="0.89803921568627454" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="e3J-Tw-Rpa" secondAttribute="bottom" constant="15" id="1jC-27-1dk"/>
+                <constraint firstItem="rRO-Gd-IUm" firstAttribute="centerY" secondItem="u9Y-Pi-uRH" secondAttribute="centerY" id="6Yc-rD-4VT"/>
+                <constraint firstAttribute="trailing" secondItem="QLn-0c-plO" secondAttribute="trailing" constant="20" id="BRN-eT-8TB"/>
+                <constraint firstItem="e3J-Tw-Rpa" firstAttribute="top" secondItem="QLn-0c-plO" secondAttribute="bottom" constant="15" id="FHy-E7-3uV"/>
+                <constraint firstItem="QLn-0c-plO" firstAttribute="top" secondItem="u9Y-Pi-uRH" secondAttribute="bottom" id="Jp5-7o-OlR"/>
+                <constraint firstItem="u9Y-Pi-uRH" firstAttribute="top" secondItem="j3O-Od-2fa" secondAttribute="top" constant="18" id="Nty-7r-RUh"/>
+                <constraint firstItem="rRO-Gd-IUm" firstAttribute="leading" secondItem="j3O-Od-2fa" secondAttribute="leading" constant="20" id="aqB-iN-Mzs"/>
+                <constraint firstAttribute="trailing" secondItem="e3J-Tw-Rpa" secondAttribute="trailing" constant="20" id="fQ5-IK-UyH"/>
+                <constraint firstItem="e3J-Tw-Rpa" firstAttribute="leading" secondItem="j3O-Od-2fa" secondAttribute="leading" constant="20" id="qHq-gI-Oxz"/>
+                <constraint firstAttribute="trailing" secondItem="u9Y-Pi-uRH" secondAttribute="trailing" constant="20" id="rSp-bA-TQx"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="U5D-kW-s6u"/>
+            <connections>
+                <outlet property="dateLabel" destination="u9Y-Pi-uRH" id="ruw-uh-ErG"/>
+                <outlet property="reviewLabel" destination="e3J-Tw-Rpa" id="deO-DH-CF7"/>
+                <outlet property="reviewerNameLabel" destination="QLn-0c-plO" id="qtL-ca-fB9"/>
+            </connections>
+            <point key="canvasLocation" x="102.5" y="-26.5"/>
+        </collectionViewCell>
+        <viewController id="VHp-Xt-j7e">
+            <view key="view" contentMode="scaleToFill" id="oVk-xy-JCI">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <viewLayoutGuide key="safeArea" id="v2h-oG-3dC"/>
+            </view>
+        </viewController>
+    </objects>
+</document>

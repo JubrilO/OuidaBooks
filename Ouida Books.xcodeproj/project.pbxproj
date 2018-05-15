@@ -17,6 +17,11 @@
 		9142EBE62091379B00AB6A61 /* SponsoredGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9142EBE52091379B00AB6A61 /* SponsoredGridView.swift */; };
 		9142EBEA2091399300AB6A61 /* SponsoredCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9142EBE92091399300AB6A61 /* SponsoredCell.xib */; };
 		9142EBEC209139B500AB6A61 /* SponsoredCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9142EBEB209139B500AB6A61 /* SponsoredCell.swift */; };
+		915AFB0C20AAC7E700052D7B /* BookDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915AFB0B20AAC7E700052D7B /* BookDetailsViewController.swift */; };
+		915AFB0F20AAD42500052D7B /* ReviewsGridView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 915AFB0E20AAD42500052D7B /* ReviewsGridView.xib */; };
+		915AFB1120AAD7C300052D7B /* ReviewsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915AFB1020AAD7C300052D7B /* ReviewsGridView.swift */; };
+		915AFB1420AAD8E800052D7B /* ReviewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915AFB1320AAD8E800052D7B /* ReviewsCollectionViewCell.swift */; };
+		915AFB1620AAD90900052D7B /* ReviewsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 915AFB1520AAD90900052D7B /* ReviewsCollectionViewCell.xib */; };
 		916C4EAD2088A475003AF8C3 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916C4EAC2088A475003AF8C3 /* WelcomeViewController.swift */; };
 		916C4EAF2088A54F003AF8C3 /* PersonalDeetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916C4EAE2088A54F003AF8C3 /* PersonalDeetsViewController.swift */; };
 		916C4EB12088A614003AF8C3 /* AccountDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916C4EB02088A614003AF8C3 /* AccountDetailsViewController.swift */; };
@@ -46,6 +51,11 @@
 		9142EBE52091379B00AB6A61 /* SponsoredGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsoredGridView.swift; sourceTree = "<group>"; };
 		9142EBE92091399300AB6A61 /* SponsoredCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SponsoredCell.xib; sourceTree = "<group>"; };
 		9142EBEB209139B500AB6A61 /* SponsoredCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsoredCell.swift; sourceTree = "<group>"; };
+		915AFB0B20AAC7E700052D7B /* BookDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailsViewController.swift; sourceTree = "<group>"; };
+		915AFB0E20AAD42500052D7B /* ReviewsGridView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewsGridView.xib; sourceTree = "<group>"; };
+		915AFB1020AAD7C300052D7B /* ReviewsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsGridView.swift; sourceTree = "<group>"; };
+		915AFB1320AAD8E800052D7B /* ReviewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsCollectionViewCell.swift; sourceTree = "<group>"; };
+		915AFB1520AAD90900052D7B /* ReviewsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewsCollectionViewCell.xib; sourceTree = "<group>"; };
 		916C4EAC2088A475003AF8C3 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		916C4EAE2088A54F003AF8C3 /* PersonalDeetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDeetsViewController.swift; sourceTree = "<group>"; };
 		916C4EB02088A614003AF8C3 /* AccountDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsViewController.swift; sourceTree = "<group>"; };
@@ -89,10 +99,12 @@
 		912E2797208E5ADE00E768AC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				915AFB0D20AAD3FF00052D7B /* ReviewsGridView */,
 				9142EBE7209137BC00AB6A61 /* SponsoredGridView */,
 				917BB0332090B8F900899514 /* BookCoverCell */,
 				917BB0322090884A00899514 /* StoreGridSection */,
 				91F331E3208C19ED00F92CB2 /* StoreViewController.swift */,
+				915AFB0B20AAC7E700052D7B /* BookDetailsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -122,6 +134,25 @@
 				9142EBEB209139B500AB6A61 /* SponsoredCell.swift */,
 			);
 			path = SponsoredCell;
+			sourceTree = "<group>";
+		};
+		915AFB0D20AAD3FF00052D7B /* ReviewsGridView */ = {
+			isa = PBXGroup;
+			children = (
+				915AFB1220AAD8B000052D7B /* ReviewsCollectionViewCell */,
+				915AFB0E20AAD42500052D7B /* ReviewsGridView.xib */,
+				915AFB1020AAD7C300052D7B /* ReviewsGridView.swift */,
+			);
+			path = ReviewsGridView;
+			sourceTree = "<group>";
+		};
+		915AFB1220AAD8B000052D7B /* ReviewsCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				915AFB1320AAD8E800052D7B /* ReviewsCollectionViewCell.swift */,
+				915AFB1520AAD90900052D7B /* ReviewsCollectionViewCell.xib */,
+			);
+			path = ReviewsCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		916C4EB420895C10003AF8C3 /* BookStore */ = {
@@ -279,7 +310,9 @@
 			files = (
 				91EE5C6E208165AD003C74C8 /* LaunchScreen.storyboard in Resources */,
 				9142EBE42091376B00AB6A61 /* SponsoredGridView.xib in Resources */,
+				915AFB0F20AAD42500052D7B /* ReviewsGridView.xib in Resources */,
 				912E2796208E166100E768AC /* StoreGridSection.xib in Resources */,
+				915AFB1620AAD90900052D7B /* ReviewsCollectionViewCell.xib in Resources */,
 				91EE5C6B208165AD003C74C8 /* Assets.xcassets in Resources */,
 				91EE5C7720829907003C74C8 /* SignUp.storyboard in Resources */,
 				912E27A4208EE51000E768AC /* BookCoverCell.xib in Resources */,
@@ -369,9 +402,12 @@
 				916C4EB32088A735003AF8C3 /* PreferencesViewController.swift in Sources */,
 				912E27A0208EDBA700E768AC /* Book.swift in Sources */,
 				91944F8B208F4A05000638E0 /* Protocols.swift in Sources */,
+				915AFB0C20AAC7E700052D7B /* BookDetailsViewController.swift in Sources */,
 				9142EBEC209139B500AB6A61 /* SponsoredCell.swift in Sources */,
+				915AFB1420AAD8E800052D7B /* ReviewsCollectionViewCell.swift in Sources */,
 				9142EBE62091379B00AB6A61 /* SponsoredGridView.swift in Sources */,
 				91F331DD2089F79200F92CB2 /* OuidaTextField.swift in Sources */,
+				915AFB1120AAD7C300052D7B /* ReviewsGridView.swift in Sources */,
 				912E279D208E5B8C00E768AC /* StoreGridSection.swift in Sources */,
 				91F331E0208B382200F92CB2 /* Constants.swift in Sources */,
 			);

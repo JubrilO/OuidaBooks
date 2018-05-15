@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReviewsGridView" customModule="Ouida_Books" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="ooY-ec-ALj" id="3E6-yz-4Jv"/>
+                <outlet property="seeAllButton" destination="494-4a-Yb2" id="iEL-GG-KhI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="278"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiC-5W-9zv">
+                    <rect key="frame" x="20" y="0.0" width="72" height="22"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="494-4a-Yb2">
+                    <rect key="frame" x="310" y="-3.5" width="45" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="See All"/>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ooY-ec-ALj">
+                    <rect key="frame" x="0.0" y="38" width="375" height="240"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="EeL-j4-TFC">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="494-4a-Yb2" secondAttribute="trailing" constant="20" id="7Vu-Yh-1fE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ooY-ec-ALj" secondAttribute="trailing" id="87l-FY-hWG"/>
+                <constraint firstItem="aiC-5W-9zv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="RaN-sB-5qj"/>
+                <constraint firstItem="ooY-ec-ALj" firstAttribute="top" secondItem="aiC-5W-9zv" secondAttribute="bottom" constant="16" id="TIN-j8-Dd5"/>
+                <constraint firstItem="aiC-5W-9zv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="gEB-dg-4ib"/>
+                <constraint firstItem="ooY-ec-ALj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="lIZ-ul-cFT"/>
+                <constraint firstItem="494-4a-Yb2" firstAttribute="centerY" secondItem="aiC-5W-9zv" secondAttribute="centerY" id="ris-7S-UaT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ooY-ec-ALj" secondAttribute="bottom" id="tGf-5i-fR8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="36.5" y="-141"/>
+        </view>
+    </objects>
+</document>

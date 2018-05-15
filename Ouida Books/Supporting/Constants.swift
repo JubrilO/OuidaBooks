@@ -18,5 +18,6 @@ struct Constants {
     struct CellIdentifiers {
         static let SponsoredCell = "SponsoredCell"
         static let BookCoverCell = "BookCoverCell"
+        static let ReviewsCollectionViewCell = "ReviewsCollectionViewCell"
     }
 }

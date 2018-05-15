@@ -3,8 +3,7 @@
 //  Ouida Books
 //
 //  Created by Jubril on 4/22/18.
-//  Copyright © 2018 bitkoin. All rights reserved.
-//
+ //
 
 import Foundation
 import UIKit
