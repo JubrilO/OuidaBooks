@@ -8,11 +8,16 @@
 
 import Foundation
 struct Constants {
+    
+    struct StoryboardNames {
+        static let BookStore = "BookStore"
+    }
     struct StoryboardIDs {
         static let AccountDetailsScene = "AccountDetailsScene"
         static let PersonalDeetsScene = "PersonalDeetsScene"
         static let WelcomeScene = "WelcomeScene"
         static let PreferencesScene = "PreferencesScene"
+        static let BookDetailsScene = "BookDetailsScene"
     }
     
     struct CellIdentifiers {

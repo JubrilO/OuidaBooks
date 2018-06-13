@@ -3,14 +3,14 @@
 //  Ouida Books
 //
 //  Created by Jubril on 4/22/18.
- //
+//
 
 import Foundation
 import UIKit
 import FSPagerView
 
 class StoreViewController: UIViewController {
-
+    
     @IBOutlet weak var topPicksGrid: StoreGridSection!
     @IBOutlet weak var foryouGrid: StoreGridSection!
     @IBOutlet weak var pagerView: FSPagerView!
@@ -23,6 +23,8 @@ class StoreViewController: UIViewController {
         super.viewDidLoad()
         pagerView.register(FSPagerViewCell.self, forCellWithReuseIdentifier: "cell")
         createBarButtonItems()
+        topPicksGrid.delegate = self
+        foryouGrid.delegate = self
         setupPagerView()
     }
     
@@ -55,6 +57,15 @@ class StoreViewController: UIViewController {
     
     @objc func onCategoriesButtonTap() {
         
+    }
+}
+
+extension StoreViewController: GridSectionDelegate {
+    func didSelectBook(selectedBook: Book) {
+        let BookStoreStoryboard = UIStoryboard(name: Constants.StoryboardNames.BookStore, bundle: nil)
+        let bookDetailViewController = BookStoreStoryboard.instantiateViewController(withIdentifier: Constants.StoryboardIDs.BookDetailsScene) as! BookDetailsViewController
+        bookDetailViewController.book = selectedBook
+        navigationController?.pushViewController(bookDetailViewController, animated: true)
     }
 }
 

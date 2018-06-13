@@ -11,6 +11,8 @@ target 'Ouida Books' do
   pod 'Alamofire'
   pod 'IQKeyboardManagerSwift'
   pod 'FSPagerView'
+  pod 'Cosmos', '~> 16.0'
+
 
 
 

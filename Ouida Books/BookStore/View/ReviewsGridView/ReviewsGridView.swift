@@ -22,12 +22,12 @@ class ReviewsGridView: UIView, NibLoadable, UICollectionViewDelegate, UICollecti
         super.awakeFromNib()
         if collectionView != nil {
             let cell = UINib(nibName: Constants.CellIdentifiers.ReviewsCollectionViewCell, bundle: nil)
-            collectionView.register(cell, forCellWithReuseIdentifier: Constants.CellIdentifiers.SponsoredCell)
+            collectionView.register(cell, forCellWithReuseIdentifier: Constants.CellIdentifiers.ReviewsCollectionViewCell)
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.CellIdentifiers.ReviewsCollectionViewCell, for: indexPath) as! SponsoredCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.CellIdentifiers.ReviewsCollectionViewCell, for: indexPath) as! ReviewsCollectionViewCell
         return cell
     }
     
@@ -38,7 +38,7 @@ class ReviewsGridView: UIView, NibLoadable, UICollectionViewDelegate, UICollecti
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let cellWidth = 89/100 * collectionView.bounds.width
-        return CGSize(width: cellWidth, height: 298)
+        return CGSize(width: cellWidth, height: 205)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

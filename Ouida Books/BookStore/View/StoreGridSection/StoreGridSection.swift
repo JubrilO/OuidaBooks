@@ -8,12 +8,19 @@
 
 import UIKit
 
+protocol GridSectionDelegate {
+    func didSelectBook(selectedBook: Book)
+}
 class StoreGridSection: UIView, NibLoadable, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+    
+    
+ 
     
     @IBOutlet var backgroundView: UIView!
     @IBOutlet weak var sectionHeader: UILabel!
     @IBOutlet weak var seeAllButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
+    var delegate: GridSectionDelegate?
     
     let books: [Book] = [Book(author: "Nnedi Okorafor", title: "Who Fears Death", cover: #imageLiteral(resourceName: "book3")), Book(author: "Odafe Atogun", title: "Taduno's Song", cover: #imageLiteral(resourceName: "book1")), Book(author: "Hadiza Isma El-Rufai" , title: "An Abundance of Scorpions", cover: #imageLiteral(resourceName: "book2"))]
     
@@ -60,6 +67,11 @@ class StoreGridSection: UIView, NibLoadable, UICollectionViewDelegate, UICollect
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 0)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let selectedBook = books[indexPath.item]
+        delegate?.didSelectBook(selectedBook: selectedBook)
     }
     
 }

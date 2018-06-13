@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="j3O-Od-2fa" customClass="ReviewsCollectionViewCell" customModule="Ouida_Books" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ReviewsCollectionViewCell" id="j3O-Od-2fa" customClass="ReviewsCollectionViewCell" customModule="Ouida_Books" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="355" height="205"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -33,8 +33,8 @@
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3J-Tw-Rpa">
                         <rect key="frame" x="20" y="69" width="315" height="121"/>
-                        <mutableString key="text">Consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-</mutableString>
+                        <string key="text">Consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+</string>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -47,6 +47,36 @@
                             <constraint firstAttribute="height" constant="11" id="of2-A2-crz"/>
                         </constraints>
                     </view>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wFT-Rc-zLK" customClass="CosmosView" customModule="Cosmos">
+                        <rect key="frame" x="6" y="20" width="240" height="45"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                <color key="value" red="0.88235294119999996" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                <color key="value" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
                 </subviews>
             </view>
             <color key="backgroundColor" red="0.90196078431372551" green="0.89803921568627454" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
@@ -56,13 +86,20 @@
                 <constraint firstAttribute="trailing" secondItem="QLn-0c-plO" secondAttribute="trailing" constant="20" id="BRN-eT-8TB"/>
                 <constraint firstItem="e3J-Tw-Rpa" firstAttribute="top" secondItem="QLn-0c-plO" secondAttribute="bottom" constant="15" id="FHy-E7-3uV"/>
                 <constraint firstItem="QLn-0c-plO" firstAttribute="top" secondItem="u9Y-Pi-uRH" secondAttribute="bottom" id="Jp5-7o-OlR"/>
+                <constraint firstItem="wFT-Rc-zLK" firstAttribute="leading" secondItem="j3O-Od-2fa" secondAttribute="leading" constant="20" id="Lhh-ei-eq7"/>
                 <constraint firstItem="u9Y-Pi-uRH" firstAttribute="top" secondItem="j3O-Od-2fa" secondAttribute="top" constant="18" id="Nty-7r-RUh"/>
                 <constraint firstItem="rRO-Gd-IUm" firstAttribute="leading" secondItem="j3O-Od-2fa" secondAttribute="leading" constant="20" id="aqB-iN-Mzs"/>
                 <constraint firstAttribute="trailing" secondItem="e3J-Tw-Rpa" secondAttribute="trailing" constant="20" id="fQ5-IK-UyH"/>
+                <constraint firstItem="wFT-Rc-zLK" firstAttribute="centerY" secondItem="u9Y-Pi-uRH" secondAttribute="centerY" id="hOz-tA-sdV"/>
                 <constraint firstItem="e3J-Tw-Rpa" firstAttribute="leading" secondItem="j3O-Od-2fa" secondAttribute="leading" constant="20" id="qHq-gI-Oxz"/>
                 <constraint firstAttribute="trailing" secondItem="u9Y-Pi-uRH" secondAttribute="trailing" constant="20" id="rSp-bA-TQx"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="U5D-kW-s6u"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="9"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="dateLabel" destination="u9Y-Pi-uRH" id="ruw-uh-ErG"/>
                 <outlet property="reviewLabel" destination="e3J-Tw-Rpa" id="deO-DH-CF7"/>
@@ -70,13 +107,5 @@
             </connections>
             <point key="canvasLocation" x="102.5" y="-26.5"/>
         </collectionViewCell>
-        <viewController id="VHp-Xt-j7e">
-            <view key="view" contentMode="scaleToFill" id="oVk-xy-JCI">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                <viewLayoutGuide key="safeArea" id="v2h-oG-3dC"/>
-            </view>
-        </viewController>
     </objects>
 </document>
