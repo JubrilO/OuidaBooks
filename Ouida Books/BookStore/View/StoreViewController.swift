@@ -25,9 +25,19 @@ class StoreViewController: UIViewController {
         createBarButtonItems()
         topPicksGrid.delegate = self
         foryouGrid.delegate = self
+        foryouGrid.seeAllButton.addTarget(self, action: #selector(onSeeAllButtonTap), for: .touchUpInside)
+        topPicksGrid.seeAllButton.addTarget(self, action: #selector(onSeeAllButtonTap), for: .touchUpInside)
         setupPagerView()
     }
     
+
+    @objc func onSeeAllButtonTap(_ sender: UIButton) {
+        print("See All button tapped")
+        let storyboard = UIStoryboard(name: Constants.StoryboardNames.BookStore, bundle: nil)
+        let booksCollectionVC = storyboard.instantiateViewController(withIdentifier: Constants.StoryboardIDs.BooksCollectionScene)
+        present(booksCollectionVC, animated: true, completion: nil)
+        ///navigationController?.pushViewController(booksCollectionVC, animated: true)
+    }
     
     func setupPagerView() {
         let pageControl = FSPageControl(frame: CGRect(x: 0, y: 0, width: 200, height: 20))

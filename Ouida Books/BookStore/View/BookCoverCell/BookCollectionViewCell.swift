@@ -14,6 +14,7 @@ class BookCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var bookCoverImage: UIImageView!
     @IBOutlet weak var bookTitleLabel: UILabel!
     @IBOutlet weak var authorNameLabel: UILabel!
+    @IBOutlet weak var titleSpacingConstraint: NSLayoutConstraint!
     
     override func draw(_ rect: CGRect) {
         super.draw(rect)

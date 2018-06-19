@@ -43,7 +43,7 @@ class StoreGridSection: UIView, NibLoadable, UICollectionViewDelegate, UICollect
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookCoverCell", for: indexPath) as! BookCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.CellIdentifiers.BookCoverCell, for: indexPath) as! BookCollectionViewCell
         
         let book = books[Int(randRange(lower: 0, upper: 2))]
         cell.shadowView.layer.applySketchShadow()

@@ -27,6 +27,8 @@
 		916C4EB12088A614003AF8C3 /* AccountDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916C4EB02088A614003AF8C3 /* AccountDetailsViewController.swift */; };
 		916C4EB32088A735003AF8C3 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916C4EB22088A735003AF8C3 /* PreferencesViewController.swift */; };
 		91944F8B208F4A05000638E0 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91944F8A208F4A05000638E0 /* Protocols.swift */; };
+		91CA49FE20D92CC7008184AC /* ReviewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CA49FD20D92CC7008184AC /* ReviewsTableViewController.swift */; };
+		91CA4A0020D932A9008184AC /* ReviewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CA49FF20D932A9008184AC /* ReviewsTableViewCell.swift */; };
 		91EE5C64208165AB003C74C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EE5C63208165AB003C74C8 /* AppDelegate.swift */; };
 		91EE5C69208165AB003C74C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91EE5C67208165AB003C74C8 /* Main.storyboard */; };
 		91EE5C6B208165AD003C74C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91EE5C6A208165AD003C74C8 /* Assets.xcassets */; };
@@ -37,6 +39,8 @@
 		91F331E2208B827200F92CB2 /* BookStore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F331E1208B827200F92CB2 /* BookStore.storyboard */; };
 		91F331E4208C19ED00F92CB2 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F331E3208C19ED00F92CB2 /* StoreViewController.swift */; };
 		91F331E6208C1D0500F92CB2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F331E5208C1D0500F92CB2 /* Extensions.swift */; };
+		91F80A9C20D3E5F8003F7CD4 /* BooksCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F80A9B20D3E5F8003F7CD4 /* BooksCollectionViewController.swift */; };
+		91F80A9E20D88478003F7CD4 /* archi.epub in Resources */ = {isa = PBXBuildFile; fileRef = 91F80A9D20D88478003F7CD4 /* archi.epub */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +65,8 @@
 		916C4EB02088A614003AF8C3 /* AccountDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsViewController.swift; sourceTree = "<group>"; };
 		916C4EB22088A735003AF8C3 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		91944F8A208F4A05000638E0 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		91CA49FD20D92CC7008184AC /* ReviewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewController.swift; sourceTree = "<group>"; };
+		91CA49FF20D932A9008184AC /* ReviewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewCell.swift; sourceTree = "<group>"; };
 		91EE5C60208165AB003C74C8 /* Ouida Books.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ouida Books.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91EE5C63208165AB003C74C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91EE5C68208165AB003C74C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -73,6 +79,8 @@
 		91F331E1208B827200F92CB2 /* BookStore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BookStore.storyboard; sourceTree = "<group>"; };
 		91F331E3208C19ED00F92CB2 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		91F331E5208C1D0500F92CB2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		91F80A9B20D3E5F8003F7CD4 /* BooksCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BooksCollectionViewController.swift; path = View/BooksCollectionViewController.swift; sourceTree = "<group>"; };
+		91F80A9D20D88478003F7CD4 /* archi.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = archi.epub; sourceTree = "<group>"; };
 		C8FE32599E0E5ED0053A578A /* Pods-Ouida Books.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ouida Books.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ouida Books/Pods-Ouida Books.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,6 +168,9 @@
 			children = (
 				912E2797208E5ADE00E768AC /* View */,
 				91F331E1208B827200F92CB2 /* BookStore.storyboard */,
+				91F80A9B20D3E5F8003F7CD4 /* BooksCollectionViewController.swift */,
+				91CA49FD20D92CC7008184AC /* ReviewsTableViewController.swift */,
+				91CA49FF20D932A9008184AC /* ReviewsTableViewCell.swift */,
 			);
 			path = BookStore;
 			sourceTree = "<group>";
@@ -232,6 +243,7 @@
 		91F331DE208B380500F92CB2 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				91F80A9D20D88478003F7CD4 /* archi.epub */,
 				91F331DF208B382200F92CB2 /* Constants.swift */,
 				91944F8A208F4A05000638E0 /* Protocols.swift */,
 				91F331E5208C1D0500F92CB2 /* Extensions.swift */,
@@ -310,6 +322,7 @@
 			files = (
 				91EE5C6E208165AD003C74C8 /* LaunchScreen.storyboard in Resources */,
 				9142EBE42091376B00AB6A61 /* SponsoredGridView.xib in Resources */,
+				91F80A9E20D88478003F7CD4 /* archi.epub in Resources */,
 				915AFB0F20AAD42500052D7B /* ReviewsGridView.xib in Resources */,
 				912E2796208E166100E768AC /* StoreGridSection.xib in Resources */,
 				915AFB1620AAD90900052D7B /* ReviewsCollectionViewCell.xib in Resources */,
@@ -396,10 +409,12 @@
 			files = (
 				916C4EAF2088A54F003AF8C3 /* PersonalDeetsViewController.swift in Sources */,
 				916C4EAD2088A475003AF8C3 /* WelcomeViewController.swift in Sources */,
+				91CA4A0020D932A9008184AC /* ReviewsTableViewCell.swift in Sources */,
 				916C4EB12088A614003AF8C3 /* AccountDetailsViewController.swift in Sources */,
 				912E279B208E5B5F00E768AC /* BookCollectionViewCell.swift in Sources */,
 				91EE5C64208165AB003C74C8 /* AppDelegate.swift in Sources */,
 				91F331E6208C1D0500F92CB2 /* Extensions.swift in Sources */,
+				91CA49FE20D92CC7008184AC /* ReviewsTableViewController.swift in Sources */,
 				91F331E4208C19ED00F92CB2 /* StoreViewController.swift in Sources */,
 				916C4EB32088A735003AF8C3 /* PreferencesViewController.swift in Sources */,
 				912E27A0208EDBA700E768AC /* Book.swift in Sources */,
@@ -408,6 +423,7 @@
 				9142EBEC209139B500AB6A61 /* SponsoredCell.swift in Sources */,
 				915AFB1420AAD8E800052D7B /* ReviewsCollectionViewCell.swift in Sources */,
 				9142EBE62091379B00AB6A61 /* SponsoredGridView.swift in Sources */,
+				91F80A9C20D3E5F8003F7CD4 /* BooksCollectionViewController.swift in Sources */,
 				91F331DD2089F79200F92CB2 /* OuidaTextField.swift in Sources */,
 				915AFB1120AAD7C300052D7B /* ReviewsGridView.swift in Sources */,
 				912E279D208E5B8C00E768AC /* StoreGridSection.swift in Sources */,
@@ -557,7 +573,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E5H7W73394;
+				DEVELOPMENT_TEAM = L785KJVG3Z;
 				INFOPLIST_FILE = "Ouida Books/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -577,7 +593,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E5H7W73394;
+				DEVELOPMENT_TEAM = L785KJVG3Z;
 				INFOPLIST_FILE = "Ouida Books/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

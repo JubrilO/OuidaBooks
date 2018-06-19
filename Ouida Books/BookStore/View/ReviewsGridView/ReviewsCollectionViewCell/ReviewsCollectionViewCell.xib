@@ -12,11 +12,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ReviewsCollectionViewCell" id="j3O-Od-2fa" customClass="ReviewsCollectionViewCell" customModule="Ouida_Books" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="355" height="205"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" reuseIdentifier="ReviewsCollectionViewCell" id="j3O-Od-2fa" customClass="ReviewsCollectionViewCell" customModule="Ouida_Books" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="602" height="205"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                <rect key="frame" x="0.0" y="0.0" width="355" height="205"/>
+                <rect key="frame" x="0.0" y="0.0" width="602" height="205"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apr 16" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9Y-Pi-uRH">
@@ -47,7 +47,7 @@
                             <constraint firstAttribute="height" constant="11" id="of2-A2-crz"/>
                         </constraints>
                     </view>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wFT-Rc-zLK" customClass="CosmosView" customModule="Cosmos">
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wFT-Rc-zLK" customClass="CosmosView" customModule="Cosmos">
                         <rect key="frame" x="6" y="20" width="240" height="45"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <userDefinedRuntimeAttributes>
@@ -95,6 +95,7 @@
                 <constraint firstAttribute="trailing" secondItem="u9Y-Pi-uRH" secondAttribute="trailing" constant="20" id="rSp-bA-TQx"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="U5D-kW-s6u"/>
+            <size key="customSize" width="602" height="205"/>
             <userDefinedRuntimeAttributes>
                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                     <integer key="value" value="9"/>
@@ -105,7 +106,7 @@
                 <outlet property="reviewLabel" destination="e3J-Tw-Rpa" id="deO-DH-CF7"/>
                 <outlet property="reviewerNameLabel" destination="QLn-0c-plO" id="qtL-ca-fB9"/>
             </connections>
-            <point key="canvasLocation" x="102.5" y="-26.5"/>
+            <point key="canvasLocation" x="102" y="-27"/>
         </collectionViewCell>
     </objects>
 </document>
